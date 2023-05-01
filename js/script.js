@@ -1,9 +1,19 @@
 const input = document.getElementById("link-input");
 const linkForm = document.getElementById("link-form");
 const errMsg = document.getElementById("err-msg");
+const button = document.getElementById("menu-btn");
+const mneu = document.getElementById("menu");
 
+button.addEventListener("click", navToggle);
 linkForm.addEventListener("submit", formSubmit);
 
+// Toggle Mobile Menu
+
+function navToggle() {
+  button.classList.toggle("open");
+  menu.classList.toggle("flex");
+  menu.classList.toggle("hidden");
+}
 // Validate a URL
 function validURL(str) {
   var pattern = new RegExp(

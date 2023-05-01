@@ -22,7 +22,7 @@
   <body>
     <!-- Nav Container -->
     <nav class="relative container mx-auto p-6 border-2 border-green-600">
-      <div class="flex items-center justify-between border-2 border-red-300">
+      <div class="flex items-center justify-between border-2 border-red">
         <!-- Flex Container For Logo/Menu -->
         <div class="flex items-center space-x-20 border-2 border-yellow-300">
           <!--  Logo -->
@@ -47,9 +47,36 @@
             >Sign Up</a
           >
         </div>
-        <!-- Todo Hamburger Menu -->
+        <!--Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="block hamburger lg:hidden focus:outline-none"
+          type="button"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
-      <!-- @todo Mobile Menu -->
+      <!--  Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100 border-2 border-purple-400"
+      >
+        <div
+          class="flex flex-col item-center justify-center w-full space-y-6 font-bold text-white rounded-sm border-2 border-gray-500"
+        >
+          <a href="" class="w-full text-center">Features</a>
+          <a href="" class="w-full text-center">Pricing</a>
+          <a href="" class="w-full text-center">Resources</a>
+          <a href="" class="w-full pt-6 border-t border-gray-400 text-center"
+            >Login</a
+          >
+          <a href="" class="w-full text-center py-3 rounded-full bg-cyan"
+            >Sign Up</a
+          >
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
